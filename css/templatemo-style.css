@@ -35,7 +35,7 @@ ul {
   font-family: "Open Sans", sans-serif;
 }
 .container {
-  max-width: 960px;
+  max-width: 1170px;
   padding-right: 0;
   padding-left: 0;
 }
@@ -112,7 +112,7 @@ ul {
   color: #0066cc;
 }
 .gold-text {
-  color: #c79c60;
+  color: #693995;
 }
 .gray-text {
   color: #949494;
@@ -174,6 +174,9 @@ ul {
 
 .tm-welcome-description {
   margin: 30px 0 10px;
+  color: black;
+  font-size: small;
+  margin-left: 15px;
 }
 
 /* carousel de iamgens */
@@ -235,7 +238,7 @@ ul {
   background-color: #ffffff;
 }
 .tm-main-section {
-  padding-top: 170px;
+  padding-top: 110px;
 }
 
 .inline-block {
@@ -251,8 +254,12 @@ ul {
 }
 
 /* Footer */
+.footer-container {
+
+}
+
 .tm-black-bg {
-  background-color: #302f2f;
+  background-color: #693995;
   color: white;
   padding-top: 50px;
 }
@@ -264,9 +271,14 @@ ul {
 .tm-footer-nav {
   font-weight: 700;
   text-transform: uppercase;
+    /*display: grid;
+    justify-content: start;
+    justify-items: start;*/
+
 }
 .tm-footer-nav ul {
   list-style: none;
+  gap: 150px;
 }
 .tm-footer-nav li {
   padding: 15px 0 0 0;
@@ -278,6 +290,14 @@ ul {
   color: #c79c60;
   text-decoration: none;
 }
+
+.tm-footer-container-redes {
+  /*display: flex;
+  flex-direction: column;
+  align-items: flex-end;*/
+
+}
+
 .margin-bottom-30 {
   margin-bottom: 30px;
 }
@@ -308,6 +328,9 @@ ul {
   padding-top: 4px;
   margin-right: 10px;
 }
+
+fab fa-instagram
+
 .tm-social-icon:last-child {
   margin-right: 0;
 }
@@ -418,30 +441,67 @@ ul {
   left: 92px;
   bottom: -50px;
 }
-.tm-special-item {
-  display: inline-block;
-  padding: 8px;
-  background-color: white;
-  max-width: 100%;
-}
-.tm-special-img-container {
-  display: inline-block;
-  position: relative;
-  max-width: 100%;
-}
 
-.tm-special-description {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  color: white;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  padding: 12px 10px 5px;
-}
+
 .tm-special-title {
   margin-top: 0;
 }
+
+/*section de serviços*/
+
+.icon-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.icone-box {
+  width: 90px;
+}
+
+.box {
+  box-sizing: border-box;
+  flex: 0 0 32%;
+  max-width: 30%;
+  text-align: center;
+  margin: 0 10px 30px 10px; /* Margem inferior para espaçamento entre fileiras */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  min-height: 300px; /* Define a altura mínima das caixas */
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+}
+
+
+.box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background-color: #f0f0f0;
+}
+
+.box i {
+  font-size: 50px;
+  color: #663398;
+}
+
+.box h3 {
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+.box p {
+  color: #777;
+}
+
+
+/*section de serviços*/
+
 .tm-special-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -452,21 +512,8 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.tm-special-container-right {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
+
+
 .tm-special-container-lower {
   display: -webkit-box;
   display: -webkit-flex;
@@ -497,16 +544,30 @@ ol li:before {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
+  padding-top: 110px;
 }
 /*http://stackoverflow.com/questions/1032914/how-to-make-a-div-to-fill-a-remaining-horizontal-space-a-very-simple-but-annoyi*/
 .tm-section-header {
   width: 350px;
 }
-.tm-hr-container {
-  width: 65%;
+.tm-hr-container-1 {
+  width: 58%;
   height: 41px;
-  padding: 45px;
+  padding: 10px;
 }
+
+.tm-hr-container-2 {
+  width: 79%;
+  height: 41px;
+  padding: 10px;
+}
+
+.tm-hr-container-3 {
+  width: 68%;
+  height: 41px;
+  padding: 10px;
+}
+
 
 .tm-hr-1 {
   border-color: #ffe600;
@@ -550,48 +611,11 @@ ol li:before {
   color: #c79c60;
   text-decoration: none;
 }
-.tm-product {
-  margin-right: 0;
-  margin-left: auto;
-  max-width: 652px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: white;
-  padding: 20px;
-}
+
 .tm-product-text {
   max-width: 325px;
 }
-.tm-product-price {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(82, 76, 76);
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: white;
-  position: relative;
-}
+
 .tm-product-title {
   margin-top: 0;
   margin-bottom: 15px;
@@ -655,10 +679,34 @@ button.tm-more-button {
   border-radius: 10px;
 }
 
+/* botão instagram */
+.btn-instagram {
+  color: #ffd900; 
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-instagram:hover {
+  background-color: #ffffff;
+  color: white;
+}
+
+
 @media screen and (max-width: 991px) {
-  .tm-welcome-content {
-    margin-bottom: 250px;
+  .container {
+    max-width: 700px;
+    
   }
+
+
+  .tm-welcome-content {
+    padding: 155px;
+  }
+    
   .tm-main-section {
     padding-top: 200px;
   }
@@ -682,12 +730,7 @@ button.tm-more-button {
     justify-content: flex-start;
     margin-top: 15px;
   }
-  .tm-special-container-lower .tm-special-item {
-    margin-right: 10px;
-  }
-  .tm-special-container-lower .tm-special-item:last-child {
-    margin-right: 0;
-  }
+ 
   .tm-product {
     margin-left: 0;
   }
@@ -696,6 +739,10 @@ button.tm-more-button {
   }
   #google-map {
     margin-top: 50px;
+  }
+
+  .tm-black-bg {
+
   }
 }
 
