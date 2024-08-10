@@ -16,7 +16,9 @@ COLOR CODES
 /** Preloader 
 * https://ihatetomatoes.net/create-custom-preloading-screen/
 */
-
+.fix-mobile {
+  width: 100%;
+}
 .align_text {
   padding-right: 125px;
   padding-left: 18px;
@@ -195,6 +197,7 @@ ul {
 
 .carousel-items {
   display: flex;
+
   transition: transform 0.5s ease-in-out;
   width: 100%;
 }
@@ -255,7 +258,6 @@ ul {
 
 /* Footer */
 .footer-container {
-
 }
 
 .tm-black-bg {
@@ -271,14 +273,15 @@ ul {
 .tm-footer-nav {
   font-weight: 700;
   text-transform: uppercase;
-    /*display: grid;
+  /*display: grid;
     justify-content: start;
     justify-items: start;*/
-
 }
 .tm-footer-nav ul {
+  display: flex;
+  padding-left: unset;
   list-style: none;
-  gap: 150px;
+  gap: 47px;
 }
 .tm-footer-nav li {
   padding: 15px 0 0 0;
@@ -295,13 +298,16 @@ ul {
   /*display: flex;
   flex-direction: column;
   align-items: flex-end;*/
-
 }
 
 .margin-bottom-30 {
   margin-bottom: 30px;
 }
 .margin-bottom-60 {
+  display: flex;
+  column-gap: 10%;
+  margin-bottom: 60px;
+  justify-content: center;
   margin-bottom: 60px;
 }
 .margin-top-60 {
@@ -329,9 +335,7 @@ ul {
   margin-right: 10px;
 }
 
-fab fa-instagram
-
-.tm-social-icon:last-child {
+fab fa-instagram .tm-social-icon:last-child {
   margin-right: 0;
 }
 .tm-social-icon:hover,
@@ -442,7 +446,6 @@ fab fa-instagram
   bottom: -50px;
 }
 
-
 .tm-special-title {
   margin-top: 0;
 }
@@ -471,17 +474,17 @@ fab fa-instagram
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
   min-height: 300px; /* Define a altura mínima das caixas */
   flex-direction: column;
   justify-content: center; /* Centraliza verticalmente o conteúdo */
 }
 
-
 .box:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   background-color: #f0f0f0;
 }
 
@@ -499,7 +502,6 @@ fab fa-instagram
   color: #777;
 }
 
-
 /*section de serviços*/
 
 .tm-special-container {
@@ -512,7 +514,6 @@ fab fa-instagram
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-
 
 .tm-special-container-lower {
   display: -webkit-box;
@@ -567,7 +568,6 @@ ol li:before {
   height: 41px;
   padding: 10px;
 }
-
 
 .tm-hr-1 {
   border-color: #ffe600;
@@ -681,7 +681,7 @@ button.tm-more-button {
 
 /* botão instagram */
 .btn-instagram {
-  color: #ffd900; 
+  color: #ffd900;
   background-color: white;
   border: none;
   padding: 10px 20px;
@@ -695,18 +695,15 @@ button.tm-more-button {
   color: white;
 }
 
-
 @media screen and (max-width: 991px) {
+  .carousel-item {
+    flex: 0 0 100%; /* 1 imagen visíveis por vez */
+    box-sizing: border-box;
+  }
   .container {
     max-width: 700px;
-    
   }
 
-
-  .tm-welcome-content {
-    padding: 155px;
-  }
-    
   .tm-main-section {
     padding-top: 200px;
   }
@@ -730,7 +727,7 @@ button.tm-more-button {
     justify-content: flex-start;
     margin-top: 15px;
   }
- 
+
   .tm-product {
     margin-left: 0;
   }
@@ -742,11 +739,22 @@ button.tm-more-button {
   }
 
   .tm-black-bg {
-
   }
 }
 
 @media screen and (max-width: 767px) {
+  .icon-boxes {
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+  }
+  .box {
+    min-width: 70%;
+  }
+  .margin-bottom-60 {
+    display: flex;
+    flex-direction: column;
+  }
   .tm-nav {
     display: none;
   }
@@ -824,9 +832,6 @@ button.tm-more-button {
 }
 
 @media screen and (max-width: 650px) {
-  .tm-welcome-content {
-    margin-bottom: 190px;
-  }
   .tm-product {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -842,23 +847,5 @@ button.tm-more-button {
   }
   .tm-product-description {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .tm-welcome-content {
-    margin-bottom: 130px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .tm-welcome-content {
-    margin-bottom: 90px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .tm-welcome-content {
-    margin-bottom: 60px;
   }
 }
