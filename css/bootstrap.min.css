@@ -302,7 +302,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #000000;
   text-decoration: underline;
 }
 a:focus {
@@ -338,7 +338,7 @@ img {
   height: auto;
 }
 .img-circle {
-  border-radius: 50%;
+  border-radius: 20%;
 }
 hr {
   margin-top: 20px;

@@ -169,7 +169,7 @@ ul {
 /* quemo somos */
 
 .tm-titulos {
-  font-size: 40px;
+  font-size: 30px;
   color: #693995;
   font-weight: 600;
 }
@@ -181,7 +181,12 @@ ul {
   margin-left: 15px;
 }
 
-/* carousel de iamgens */
+
+
+
+
+
+/*carousel de iamgens*/
 .carousel-container {
   position: relative;
   width: 90%; /* Ajuste conforme necessário */
@@ -217,7 +222,7 @@ ul {
   position: absolute;
   top: 90%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(160 0 240 / 50%);
   border: none;
   color: white;
   font-size: 24px;
@@ -228,10 +233,12 @@ ul {
 
 .carousel-control.prev {
   left: 0px;
+  top: 97%;
 }
 
 .carousel-control.next {
   right: 0px;
+  top: 97%;
 }
 
 /* carousel de iamgens */
@@ -264,6 +271,7 @@ ul {
   background-color: #693995;
   color: white;
   padding-top: 50px;
+  margin-top: 8%;
 }
 .tm-footer-div-title {
   color: white;
@@ -681,7 +689,7 @@ button.tm-more-button {
 
 /* botão instagram */
 .btn-instagram {
-  color: #ffd900;
+  color: #000000;
   background-color: white;
   border: none;
   padding: 10px 20px;
@@ -692,7 +700,7 @@ button.tm-more-button {
 
 .btn-instagram:hover {
   background-color: #ffffff;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 991px) {
