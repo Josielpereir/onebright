@@ -181,11 +181,6 @@ ul {
   margin-left: 15px;
 }
 
-
-
-
-
-
 /*carousel de iamgens*/
 .carousel-container {
   position: relative;
@@ -856,4 +851,17 @@ button.tm-more-button {
   .tm-product-description {
     text-align: center;
   }
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
